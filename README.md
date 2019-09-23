@@ -5,31 +5,32 @@ This script uploads files\dirs to an FTP server automatically. It generates an F
 	FTP_Upload.bat [args]
  
 ## Args
-  -a  :   FTP Server address. IP or name
-  -p  :   Connection port 
-  -u  :   User 
-  -w  :   Password
-  -d  :   Starting remote location/path (cd) at your FTP server. Set '/' to start at the root.
-  -t  :   Single target file to upload
-  -l  :   Text list of files to upload. One line for each file\dir
-  -s  :   Silent mode. All necessary flags above must be provided, or assigned in the script under defaults function.
-  -h  :   Show help message
+  `-a  :   FTP Server address. IP or name ` <br>
+  `-p  :   Connection port ` <br>
+  `-u  :   User ` <br>
+  `-w  :   Password ` <br>
+  `-d  :   Starting remote location/path (cd) at your FTP server. Set '/' to start at the root. ` <br>
+  `-t  :   Single target file to upload ` <br>
+  `-l  :   Text list of files to upload. One line for each file\dir ` <br>
+  `-s  :   Silent mode. All necessary flags above must be provided, or assigned in the script under defaults function. ` <br>
+  `-h  :   Show help message ` <br>
 
-## More
-   Normal - 1. Double click the script, then start dragging files and folders to upload one by one and press enter after each drag.
-            2. press enter on empty input to finish.
-            3. Enter your password.
-            4. Press 'Y' to start upload.
+## Mods
+   Running in normal mode: <br>
+   1. Double click the script, then start dragging files and folders to upload one by one and press enter after each drag.
+   2. press enter on empty input to finish.
+   3. Enter your password.
+   4. Press 'Y' to start upload.
     
-   Silent - See examples below for running this script in silent mode.
- 
+   Running in silent mode: <br>
+   - See examples below for running this script in silent mode. <br>
  
 ## Silent Mode Examples
-   Upload one file        -  FTP_Upload.bat -a 192.168.11.14 -p 21 -u myUser -w myPass -d / -t "C:\MyGitProjects\Tests\Test1.bat" -s
-   Upload few files       -  FTP_Upload.bat -a myServ -p 21 -u myUser -w myPass -d / -t "C:\Test1.bat C:\Hello\World C:\Test2.bat D:\mydir" -s
-   Upload list file  	   -  FTP_Upload.bat -a myServ -u myUser -w myPass -l "C:\FTP\UploadList.txt" -s
-   Upload list and files  -  FTP_Upload.bat -a myServ -u myUser -w myPass -l "C:\FTP\UploadList.txt" -t "C:\Test1.bat C:\Hello\World C:\Test2.bat D:\mydir" -s
-   Upload using defaults  -  FTP_Upload.bat -w myPass -t "C:\Test1.bat C:\Hello\World C:\Test2.bat D:\mydir" -s
+   Upload one file        -  ```FTP_Upload.bat -a 192.168.11.14 -p 21 -u myUser -w myPass -d / -t "C:\MyGitProjects\Tests\Test1.bat" -s ``` <br>
+   Upload few files       -  ```FTP_Upload.bat -a myServ -p 21 -u myUser -w myPass -d / -t "C:\Test1.bat C:\Hello\World C:\Test2.bat D:\mydir" -s ``` <br>
+   Upload list file  	  -  ```FTP_Upload.bat -a myServ -u myUser -w myPass -l "C:\FTP\UploadList.txt" -s ``` <br>
+   Upload list and files  -  ```FTP_Upload.bat -a myServ -u myUser -w myPass -l "C:\FTP\UploadList.txt" -t "C:\Test1.bat C:\Hello\World C:\Test2.bat D:\mydir" -s ``` <br>
+   Upload using defaults  -  ```FTP_Upload.bat -w myPass -t "C:\Test1.bat C:\Hello\World C:\Test2.bat D:\mydir" -s ``` <br>
  
  
 # Known bugs

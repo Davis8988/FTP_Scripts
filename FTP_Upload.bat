@@ -409,12 +409,14 @@ echo   -s  :   Silent mode. All necessary flags above must be provided, or assig
 echo   -h  :   Show help message
 echo.
 echo  More:
-echo    Normal - 1. Double click the script, then start dragging files and folders to upload one by one and press enter after each drag.
-echo             2. press enter on empty input to finish.
-echo             3. Enter your password.
-echo             4. Press 'Y' to start upload.
+echo    Running in normal mode: - 
+echo 	  1. Double click the script, then start dragging files and folders to upload one by one and press enter after each drag.
+echo      2. press enter on empty input to finish.
+echo      3. Enter your password.
+echo      4. Press 'Y' to start upload.
 echo.    
-echo    Silent - See examples below for running this script in silent mode.
+echo    Running in silent mode: 
+echo 	  - See examples below for running this script in silent mode.
 echo. 
 echo. 
 echo  Silent Mode Examples:
