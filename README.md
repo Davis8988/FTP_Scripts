@@ -26,11 +26,16 @@ This script uploads files\dirs to an FTP server automatically. It generates an F
    - See examples below for running this script in silent mode. <br>
  
 ## Silent Mode Examples
-   Upload one file        -  ```FTP_Upload.bat -a 192.168.11.14 -p 21 -u myUser -w myPass -d / -t "C:\MyGitProjects\Tests\Test1.bat" -s ``` <br>
-   Upload few files       -  ```FTP_Upload.bat -a myServ -p 21 -u myUser -w myPass -d / -t "C:\Test1.bat C:\Hello\World C:\Test2.bat D:\mydir" -s ``` <br>
-   Upload list file  	  -  ```FTP_Upload.bat -a myServ -u myUser -w myPass -l "C:\FTP\UploadList.txt" -s ``` <br>
-   Upload list and files  -  ```FTP_Upload.bat -a myServ -u myUser -w myPass -l "C:\FTP\UploadList.txt" -t "C:\Test1.bat C:\Hello\World C:\Test2.bat D:\mydir" -s ``` <br>
-   Upload using defaults  -  ```FTP_Upload.bat -w myPass -t "C:\Test1.bat C:\Hello\World C:\Test2.bat D:\mydir" -s ``` <br>
+   * Upload one file
+   ```FTP_Upload.bat -a 192.168.11.14 -p 21 -u myUser -w myPass -d / -t "C:\MyGitProjects\Tests\Test1.bat" -s ``` <br>
+   * Upload few files
+   ```FTP_Upload.bat -a myServ -p 21 -u myUser -w myPass -d / -t "C:\Test1.bat C:\Hello\World C:\Test2.bat D:\mydir" -s ``` <br>
+   * Upload list file
+   ```FTP_Upload.bat -a myServ -u myUser -w myPass -l "C:\FTP\UploadList.txt" -s ``` <br>
+   * Upload list and files
+   ```FTP_Upload.bat -a myServ -u myUser -w myPass -l "C:\FTP\UploadList.txt" -t "C:\Test1.bat C:\Hello\World C:\Test2.bat D:\mydir" -s ``` <br>
+   * Upload using defaults
+   ``FTP_Upload.bat -w myPass -t "C:\Test1.bat C:\Hello\World C:\Test2.bat D:\mydir" -s ``` <br>
  
  
 # Known bugs
@@ -39,5 +44,5 @@ This script uploads files\dirs to an FTP server automatically. It generates an F
         listed files and dirs but with no success. After that it will print that it finished executing
         the FTP script successfully, eventhough it failed, But no harm is done anyway.
  
- 
-- Written by David Yair
+## By
+Written by David Yair
