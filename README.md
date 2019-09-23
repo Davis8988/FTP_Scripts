@@ -5,15 +5,15 @@ This script uploads files\dirs to an FTP server automatically. It generates an F
 	FTP_Upload.bat [args]
  
 ## Args
-  `-a  :   FTP Server address. IP or name ` <br>
-  `-p  :   Connection port ` <br>
-  `-u  :   User ` <br>
-  `-w  :   Password ` <br>
-  `-d  :   Starting remote location/path (cd) at your FTP server. Set '/' to start at the root. ` <br>
-  `-t  :   Single target file to upload ` <br>
-  `-l  :   Text list of files to upload. One line for each file\dir ` <br>
-  `-s  :   Silent mode. All necessary flags above must be provided, or assigned in the script under defaults function. ` <br>
-  `-h  :   Show help message ` <br>
+  `**-a**  :   FTP Server address. IP or name ` <br>
+  `**-p**  :   Connection port ` <br>
+  `**-u**  :   User ` <br>
+  `**-w**  :   Password ` <br>
+  `**-d**  :   Starting remote location/path (cd) at your FTP server. Set '/' to start at the root. ` <br>
+  `**-t**  :   Single target file to upload ` <br>
+  `**-l**  :   Text list of files to upload. One line for each file\dir ` <br>
+  `**-s**  :   Silent mode. All necessary flags above must be provided, or assigned in the script under defaults function. ` <br>
+  `**-h**  :   Show help message ` <br>
 
 ## Mods
    Running in normal mode: <br>
@@ -26,15 +26,15 @@ This script uploads files\dirs to an FTP server automatically. It generates an F
    - See examples below for running this script in silent mode. <br>
  
 ## Silent Mode Examples
-   * Upload one file
+   * Upload one file <br>
    ```FTP_Upload.bat -a 192.168.11.14 -p 21 -u myUser -w myPass -d / -t "C:\MyGitProjects\Tests\Test1.bat" -s ``` <br>
-   * Upload few files
+   * Upload few files <br>
    ```FTP_Upload.bat -a myServ -p 21 -u myUser -w myPass -d / -t "C:\Test1.bat C:\Hello\World C:\Test2.bat D:\mydir" -s ``` <br>
-   * Upload list file
+   * Upload list file <br>
    ```FTP_Upload.bat -a myServ -u myUser -w myPass -l "C:\FTP\UploadList.txt" -s ``` <br>
-   * Upload list and files
+   * Upload list and files <br>
    ```FTP_Upload.bat -a myServ -u myUser -w myPass -l "C:\FTP\UploadList.txt" -t "C:\Test1.bat C:\Hello\World C:\Test2.bat D:\mydir" -s ``` <br>
-   * Upload using defaults
+   * Upload using defaults <br>
    ``FTP_Upload.bat -w myPass -t "C:\Test1.bat C:\Hello\World C:\Test2.bat D:\mydir" -s ``` <br>
  
  
