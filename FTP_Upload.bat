@@ -414,8 +414,7 @@ echo             2. press enter on empty input to finish.
 echo             3. Enter your password.
 echo             4. Press 'Y' to start upload.
 echo.    
-echo    Silent - 1. Prepare text file containing all your files and dirs to upload (one file\dir for each line)
-echo             2. Open cmd and launch: FTP_Upload.bat -silent "MyPass101" "C:\myFiles\FilesToUpload.txt"
+echo    Silent - See examples below for running this script in silent mode.
 echo. 
 echo. 
 echo  Silent Mode Examples:
@@ -433,7 +432,7 @@ echo         listed files and dirs but with no success. After that it will print
 echo         the FTP script successfully, eventhough it failed, But no harm is done anyway.
 echo. 
 echo. 
-echo Written by David Yair
+echo - Written by David Yair
 echo. 
 echo.
 
