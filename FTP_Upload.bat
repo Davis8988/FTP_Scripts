@@ -84,6 +84,7 @@ for /L %%a in (1, 1, !paramCount!) do (
 	if !isFlag! equ 1 (
 		set flag=!params[%%a]!
 		set isFlag=0
+		if /i "!flag!" == "-s" (set silentFlag=1)
 		if /i "!flag!" == "-h" (call :PRINT_HELP_MESSAGE && pause && goto :END)
 	) else (
 		set value=!params[%%a]!
@@ -96,7 +97,6 @@ for /L %%a in (1, 1, !paramCount!) do (
 		if /i "!flag!" == "-d" (set ftpDefaultStartLoc=!value!) 
 		if /i "!flag!" == "-t" (set ftpTargetsToUpload=!value!) 
 		if /i "!flag!" == "-l" (set ftpTargetsListToUpload=!value!) 
-		if /i "!flag!" == "-s" (set silentFlag=1) 
 	)
 )
 
